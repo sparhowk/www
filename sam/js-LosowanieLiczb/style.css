@@ -1,0 +1,33 @@
+html {
+    font-family: arial;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: white;
+}
+
+div {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    margin 20px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}

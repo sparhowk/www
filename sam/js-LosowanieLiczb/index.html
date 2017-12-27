@@ -4,10 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Losowanie licz</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <button>Losuj</button>
+
+
+    <script>
+        const losowanie = function() {
+            const div = document.createElement("div");
+            div.textContent = Math.floor(Math.random() * 49 + 1);
+            document.body.appendChild(div);
+        }
+
+
+        const button = document.querySelector("button");
+        button.addEventListener("click", losowanie);
+    </script>
 
 </body>
 
