@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>skrolowanie strony</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="status"></div>
+    <script>
+        // windows.scrollY - właściwość o którą skrolowalićmy strone
+        // document.documentElement.offsetHeight - wysokość strony
+        // window.innerHeight - wykość strony
+        pageNumber = document.documentElement.offsetHeight;
+
+
+        const divBar = document.querySelector(".status"); // pobranie diva
+        const statusBar = () => {
+            currentScroll = Math.round((window.scrollY / (document.documentElement.offsetHeight - window.innerHeight)) * 100);
+            console.log(currentScroll);
+            divBar.style.width = currentScroll + "%";
+        }
+
+        window.addEventListener("scroll", statusBar);
+
+    </script>
+
+</body>
+
+</html>
